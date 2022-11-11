@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-style: normal;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  background-color: #21243d; }
+
+.fixed-navbar {
+  background-color: #21243d;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 4rem; }
+  .fixed-navbar .menu {
+    width: 100%; }
+    .fixed-navbar .menu ul {
+      padding-left: 5rem;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center; }
+      .fixed-navbar .menu ul .menu__element {
+        font-size: 1.4rem;
+        color: #f7f7f7; }
+      .fixed-navbar .menu ul .menu__element:not(:last-child),
+      .fixed-navbar .menu ul .menu__element:not(:first-child) {
+        padding: 0 5rem; }
+
+.main--body {
+  display: flex;
+  padding: 10rem;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/anh-nen.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .main--body .title-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    color: #eee; }
+  .main--body *:not(:last-child) {
+    padding-bottom: 4rem; }
+  .main--body h1 {
+    font-size: 10rem;
+    color: #f7f7f7;
+    font-weight: 700; }
+  .main--body p {
+    font-size: 2rem;
+    width: 50vw; }
+  .main--body .main--body__button button {
+    border: none;
+    padding: 1rem 4rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    font-weight: 600;
+    color: white;
+    background-color: #21243d;
+    font-family: "Montserrat", sans-serif; }
+
+.main--menu {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/design-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem 5rem 0 5rem; }
+  .main--menu > :not(:last-child) {
+    padding-bottom: 5rem; }
+  .main--menu__title {
+    font-size: 4rem;
+    color: #f7f7f7;
+    font-weight: 700; }
+  .main--menu__p {
+    font-size: 2rem;
+    color: #f7f7f7;
+    font-weight: 400;
+    padding: 0 30%; }
+  .main--menu__card {
+    display: flex;
+    justify-content: center; }
+    .main--menu__card .card--element {
+      width: 25%;
+      padding: 0 4rem; }
+      .main--menu__card .card--element > :not(:last-child) {
+        padding-bottom: 2rem; }
+      .main--menu__card .card--element .card__title {
+        font-size: 2.3rem;
+        color: #f7f7f7;
+        font-weight: 700; }
+      .main--menu__card .card--element p {
+        font-size: 1rem;
+        color: #f7f7f7;
+        font-weight: 300; }

@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+html {
+
+  // 1rem = 9px
+  font-size: 62.5%;
+  font-style: normal;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+
+  @include respond(tab-land) {
+    // < 1200px ?
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    // < 900px
+    font-size: 50%; // 1rem = 8px
+  }
+
+  @include respond(big-desktop) {
+    // > 1800px
+    font-size: 75%; // 1 rem = 12px
+  }
+}
+
+body {
+  background-color: $color-main;
+}
