@@ -1,0 +1,32 @@
+.main--body {
+    display: flex;
+    padding: 10rem;
+    @include h-w-100;
+    @include background ('../public/anh-nen.png');
+    .title-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        color: $color-grey-light-2;
+    }
+
+    *:not(:last-child) {
+        padding-bottom: 4rem;
+    }
+
+    h1 {
+        @include title (10rem , $color-grey-light-1 , 700)
+    }
+
+    p {
+        font-size: 2rem;
+        width: 50vw;
+    }
+
+    .main--body__button {
+        button {
+            @include button
+        }
+    }
+}

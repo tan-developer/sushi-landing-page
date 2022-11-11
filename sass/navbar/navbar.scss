@@ -1,0 +1,38 @@
+.fixed-navbar {
+  // height: 3rem;
+  background-color: $color-main;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 4rem;
+
+  .logo {
+  }
+
+  a {
+
+  }
+
+  .menu {
+    
+    width: 100%;
+    ul {
+      padding-left: 5rem;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      .menu__element {
+        font-size: 1.4rem;
+        color: $color-grey-light-1;
+      } 
+
+      .menu__element:not(:last-child) ,
+      .menu__element:not(:first-child) {
+        padding: 0 5rem;
+      }
+    }
+  }
+}
