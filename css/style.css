@@ -72,14 +72,15 @@ body {
     width: 50vw; }
   .main--body .main--body__button button {
     border: none;
-    padding: 1rem 4rem;
-    font-size: 1.4rem;
+    padding: 1.5rem 5.5rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
     border-radius: 4rem;
     font-weight: 600;
     color: white;
     background-color: #21243d;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer; }
 
 .main--menu {
   width: 100vw;
@@ -118,3 +119,41 @@ body {
         font-size: 1rem;
         color: #f7f7f7;
         font-weight: 300; }
+
+.main--character {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/bg-yellow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 30rem;
+  display: flex; }
+  .main--character__img, .main--character__text {
+    display: inline-block;
+    margin-top: 20%; }
+  .main--character__img {
+    margin-right: 10rem;
+    width: 100%; }
+    .main--character__img img {
+      width: 100%; }
+  .main--character__text .title {
+    font-size: 4rem;
+    color: #21243d;
+    font-weight: 700;
+    margin-bottom: 3rem; }
+  .main--character__text p {
+    font-size: 2rem;
+    color: #21243d;
+    font-weight: 400;
+    margin-bottom: 3rem; }
+  .main--character__text button {
+    border: none;
+    padding: 1.5rem 5.5rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    font-weight: 600;
+    color: white;
+    background-color: #21243d;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer; }

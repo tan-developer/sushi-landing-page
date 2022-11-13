@@ -1,0 +1,33 @@
+.main--character {
+    @include h-w-100;
+    @include background ('../public/bg-yellow.png');
+    padding: 0 30rem;
+    display: flex;
+ &__img , &__text {
+    display: inline-block;
+    margin-top: 20%;
+ }
+
+ &__img {
+    margin-right: 10rem;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+ }
+
+ &__text {
+    .title {
+        @include title(4rem , $color-main , 700);
+        margin-bottom: 3rem;
+    }
+    p {
+        @include title(2rem , $color-main ,400);
+        margin-bottom: 3rem;
+    }
+
+    button {
+        @include button
+    }
+ }
+}
