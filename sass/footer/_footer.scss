@@ -1,0 +1,44 @@
+footer {
+  background-color: #111111;
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  padding-top: 10rem;
+
+  .col-5-2 {
+    p {
+      max-width: 50%;
+      margin-bottom: 2rem !important;
+    }
+    .icon {
+      display: flex;
+      text-align: center;
+      flex-direction: row;
+      &--element {
+        margin-right: 2rem;
+      }
+      i {
+        @include title(2rem, $color-grey-dark-3, 500);
+      }
+    }
+  }
+
+  .col-5-1 {
+    >:not(:last-child) {
+      margin-right: 1rem
+    }
+  }
+
+  .title {
+    @include title(1.5rem, $color-grey-light-1, 500);
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    @include title(1rem, $color-grey-light-1, 500);
+    margin-bottom: 0.7rem;
+  }
+}
+
+

@@ -1,5 +1,6 @@
 @import "root/variable";
 
+@import "abstracts/animations";
 @import "abstracts/mixin";
 @import "root/base";
 
@@ -7,4 +8,7 @@
 @import "navbar/navbar";
 @import "body/title";
 @import "body/card";
-@import "body/_character";
+@import "body/character";
+@import "body/mailbox";
+
+@import "footer/footer";

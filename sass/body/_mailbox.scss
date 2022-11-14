@@ -1,0 +1,53 @@
+.main--subscribe {
+  display: flex;
+  flex-direction: column;
+  @include h-w-100;
+  @include background("../public/design-background.png");
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    @include title(5rem, $color-grey-light-1, 600);
+    margin-bottom: 3rem;
+  }
+
+  &__parph {
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center;
+    p {
+      @include title(1.3rem, $color-grey-light-1, 400);
+      max-width: 50%;
+    }
+  }
+
+  &__container {
+    width: 100rem;
+    .mail-box {
+      width: inherit;
+      display: flex;
+      background: $color-grey-light-1;
+      border-radius: 4rem;
+      padding-left: 4rem;
+      input,
+      input:focus,
+      input:active {
+        border: none;
+        outline: none;
+      }
+      input {
+        width: inherit;
+        font-family: inherit;
+        @include title(2rem, $color-main, 500);
+      }
+
+      button {
+        border: none;
+        @include button;
+        background-color: #ffd17e !important;
+        color: $color-main;
+      }
+    }
+  }
+}
