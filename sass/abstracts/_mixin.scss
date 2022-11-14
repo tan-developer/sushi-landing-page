@@ -39,7 +39,7 @@
   height: 100vh;
 }
 
-@mixin title ($fontsize , $color : $color-grey-light-1 , $font-weight) {
+@mixin title ($fontsize , $color  , $font-weight) {
   font-size: $fontsize;
   color: $color;
   font-weight: $font-weight;

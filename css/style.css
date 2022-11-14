@@ -157,3 +157,95 @@ body {
     background-color: #21243d;
     font-family: "Montserrat", sans-serif;
     cursor: pointer; }
+
+.main--subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../public/design-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+  .main--subscribe__title {
+    font-size: 5rem;
+    color: #f7f7f7;
+    font-weight: 600;
+    margin-bottom: 3rem; }
+  .main--subscribe__parph {
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: center; }
+    .main--subscribe__parph p {
+      font-size: 1.3rem;
+      color: #f7f7f7;
+      font-weight: 400;
+      max-width: 50%; }
+  .main--subscribe__container {
+    width: 100rem; }
+    .main--subscribe__container .mail-box {
+      width: inherit;
+      display: flex;
+      background: #f7f7f7;
+      border-radius: 4rem;
+      padding-left: 4rem; }
+      .main--subscribe__container .mail-box input,
+      .main--subscribe__container .mail-box input:focus,
+      .main--subscribe__container .mail-box input:active {
+        border: none;
+        outline: none; }
+      .main--subscribe__container .mail-box input {
+        width: inherit;
+        font-family: inherit;
+        font-size: 2rem;
+        color: #21243d;
+        font-weight: 500; }
+      .main--subscribe__container .mail-box button {
+        border: none;
+        border: none;
+        padding: 1.5rem 5.5rem;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        border-radius: 4rem;
+        font-weight: 600;
+        color: white;
+        background-color: #21243d;
+        font-family: "Montserrat", sans-serif;
+        cursor: pointer;
+        background-color: #ffd17e !important;
+        color: #21243d; }
+
+footer {
+  background-color: #111111;
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  padding-top: 10rem; }
+  footer .col-5-2 p {
+    max-width: 50%;
+    margin-bottom: 2rem !important; }
+  footer .col-5-2 .icon {
+    display: flex;
+    text-align: center;
+    flex-direction: row; }
+    footer .col-5-2 .icon--element {
+      margin-right: 2rem; }
+    footer .col-5-2 .icon i {
+      font-size: 2rem;
+      color: #333;
+      font-weight: 500; }
+  footer .col-5-1 > :not(:last-child) {
+    margin-right: 1rem; }
+  footer .title {
+    font-size: 1.5rem;
+    color: #f7f7f7;
+    font-weight: 500;
+    margin-bottom: 1rem; }
+  footer p {
+    font-size: 1rem;
+    color: #f7f7f7;
+    font-weight: 500;
+    margin-bottom: 0.7rem; }
