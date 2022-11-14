@@ -1,7 +1,10 @@
 .main--character {
     @include h-w-100;
     @include background ('../public/bg-yellow.png');
-    padding: 0 30rem;
+    padding: 0 20rem;
+    @include respondPx ( 500px) {
+        padding: 0 3rem;
+    }
     display: flex;
  &__img , &__text {
     display: inline-block;
@@ -11,8 +14,17 @@
  &__img {
     margin-right: 10rem;
     width: 100%;
+    @include respond('tab-port') {
+        margin-right: 5rem;
+    }
+
+    @include respondPx ( 500px) {
+    }
     img {
-        width: 100%;
+        width:80%;
+        @include respond('tab-port') {
+            width: 100%;
+        }
     }
  }
 
