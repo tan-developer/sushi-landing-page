@@ -1,24 +1,20 @@
-@mixin respond($beakpoint) {
+@mixin respond ($beakpoint) {
   @if $beakpoint == phone {
-    @media (max-width: 37.5em) {
-      @content;
-    }
+      @media (max-width : 800px) {@content}
   }
   @if $beakpoint == tab-port {
-    @media (max-width: 56.25em) {
-      @content;
-    }
+      @media (max-width : 56.25em) {@content}
   }
   @if $beakpoint == tab-land {
-    @media (max-width: 75em) {
-      @content;
-    }
+      @media (max-width : 75em) {@content}
   }
   @if $beakpoint == big-desktop {
-    @media (min-width: 112.5em) {
-      @content;
-    }
+      @media (min-width : 112.5em) {@content}
   }
+}
+
+@mixin respondPx ($pixel) {
+  @media (max-width : $pixel) {@content}
 }
 
 @mixin button {
@@ -37,6 +33,9 @@
 @mixin h-w-100 {
   width: 100vw;
   height: 100vh;
+  @include respond ('tab-port') {
+    height: 60vh ;
+  }
 }
 
 @mixin title ($fontsize , $color  , $font-weight) {

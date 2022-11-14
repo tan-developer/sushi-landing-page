@@ -2,10 +2,12 @@ footer {
   background-color: #111111;
   display: flex;
   width: 100vw;
-  height: 50vh;
+  height: 40vh;
   justify-content: center;
   padding-top: 10rem;
-
+  @include respondPx ( 500px) {
+    padding: 1rem 1rem 1rem 1rem
+  }
   .col-5-2 {
     p {
       max-width: 50%;
@@ -20,6 +22,9 @@ footer {
       }
       i {
         @include title(2rem, $color-grey-dark-3, 500);
+        @include respondPx ( 500px) {
+          font-size: 4rem;
+        }
       }
     }
   }
@@ -32,11 +37,17 @@ footer {
 
   .title {
     @include title(1.5rem, $color-grey-light-1, 500);
+    @include respondPx ( 500px) {
+      font-size: 2rem;
+    }
     margin-bottom: 1rem;
   }
   
   p {
     @include title(1rem, $color-grey-light-1, 500);
+    @include respondPx ( 500px) {
+      font-size: 1.5rem;
+    }
     margin-bottom: 0.7rem;
   }
 }

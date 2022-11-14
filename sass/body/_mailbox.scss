@@ -24,9 +24,21 @@
 
   &__container {
     width: 100rem;
+    @include respond ('tab-port') {
+      width: 70rem;
+    }
+
+    @include respondPx (500px) {
+      width: 50rem;
+    }
+    @include respondPx (300px) {
+      width: 30rem;
+    }
+
     .mail-box {
       width: inherit;
       display: flex;
+      justify-content: space-between;
       background: $color-grey-light-1;
       border-radius: 4rem;
       padding-left: 4rem;
@@ -37,6 +49,7 @@
         outline: none;
       }
       input {
+        display: inline-block !important;
         width: inherit;
         font-family: inherit;
         @include title(2rem, $color-main, 500);
