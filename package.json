@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "sushi-cloning-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "watch:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "tan-ptit",
   "dependencies": {
     "node-sass": "^7.0.3"
   },
